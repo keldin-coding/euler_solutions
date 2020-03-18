@@ -3,10 +3,10 @@ package math_helpers
 import "testing"
 
 func TestIsPrime(t *testing.T) {
-  t.Run("2 is Composite", func(t *testing.T) {
+  t.Run("2 is Prime", func(t *testing.T) {
     t.Parallel()
 
-    if IsPrime(2) == true {
+    if IsPrime(2) == false {
       t.Fail()
     }
   })
